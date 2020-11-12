@@ -47,4 +47,3 @@ I've also set this kata up on [cyber-dojo](http://cyber-dojo.org) for several la
 I analysed this repo according to the clean code standards on [Better Code Hub](https://bettercodehub.com) just to get an independent opinion of how bad the code is. Perhaps unsurprisingly, the compliance score is low!
 
 [![BCH compliance](https://bettercodehub.com/edge/badge/emilybache/GildedRose-Refactoring-Kata?branch=master)](https://bettercodehub.com/) 
-# GenieLog
