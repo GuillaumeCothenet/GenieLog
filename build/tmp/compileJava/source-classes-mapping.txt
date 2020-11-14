@@ -4,6 +4,8 @@ com/gildedrose/Backstage.java
  com.gildedrose.Backstage
 com/gildedrose/AgedBrie.java
  com.gildedrose.AgedBrie
+com/gildedrose/ItemFactory.java
+ com.gildedrose.ItemFactory
 com/gildedrose/Sulfuras.java
  com.gildedrose.Sulfuras
 com/gildedrose/GildedRose.java
