@@ -16,5 +16,3 @@ com/gildedrose/ConjuredItem.java
  com.gildedrose.ConjuredItem
 com/gildedrose/ItemFactory.java
  com.gildedrose.ItemFactory
-com/gildedrose/App.java
- com.gildedrose.App
