@@ -24,45 +24,50 @@ class GildedRose {
 <span class="fc" id="L24">						items[i].quality = items[i].quality - QUALITY_DECREASE;</span>
 					}
 				}
-			} else {
-<span class="fc bfc" id="L28" title="All 2 branches covered.">				if (items[i].quality &lt; MAX_QUALITY) {</span>
-<span class="fc" id="L29">					items[i].quality = items[i].quality + QUALITY_INCREASE;</span>
+			} 
+			else {
+<span class="fc bfc" id="L29" title="All 2 branches covered.">				if (items[i].quality &lt; MAX_QUALITY) {</span>
+<span class="fc" id="L30">					items[i].quality = items[i].quality + QUALITY_INCREASE;</span>
 
-<span class="fc bfc" id="L31" title="All 2 branches covered.">					if (items[i].name.equals(&quot;Backstage passes to a TAFKAL80ETC concert&quot;)) {</span>
-<span class="fc bfc" id="L32" title="All 2 branches covered.">						if (items[i].sellIn &lt; SELLIN_BACKSTAGE_CAP1) {</span>
-<span class="fc" id="L33">							items[i].quality = items[i].quality + QUALITY_INCREASE;</span>
+<span class="fc bfc" id="L32" title="All 2 branches covered.">					if (items[i].name.equals(&quot;Backstage passes to a TAFKAL80ETC concert&quot;)) {</span>
+<span class="fc bfc" id="L33" title="All 2 branches covered.">						if (items[i].sellIn &lt; SELLIN_BACKSTAGE_CAP1) {</span>
+<span class="fc" id="L34">							items[i].quality = items[i].quality + QUALITY_INCREASE;</span>
 						}
 
-<span class="fc bfc" id="L36" title="All 2 branches covered.">						if (items[i].sellIn &lt; SELLIN_BACKSTAGE_CAP2) {</span>
-<span class="fc" id="L37">							items[i].quality = items[i].quality + QUALITY_INCREASE;</span>
+<span class="fc bfc" id="L37" title="All 2 branches covered.">						if (items[i].sellIn &lt; SELLIN_BACKSTAGE_CAP2) {</span>
+<span class="fc" id="L38">							items[i].quality = items[i].quality + QUALITY_INCREASE;</span>
 						}
 					}
 				}
 			}
 
-<span class="fc bfc" id="L43" title="All 2 branches covered.">			if (!items[i].name.equals(&quot;Sulfuras, Hand of Ragnaros&quot;)) {</span>
-<span class="fc" id="L44">				items[i].sellIn = items[i].sellIn - SELLIN_DECREASE;</span>
-			}
+<span class="fc" id="L44">			sellInUpdate(i);</span>
 
-<span class="fc bfc" id="L47" title="All 2 branches covered.">			if (items[i].sellIn &lt; SELLIN_CAP) {</span>
-<span class="fc bfc" id="L48" title="All 2 branches covered.">				if (!items[i].name.equals(&quot;Aged Brie&quot;)) {</span>
-<span class="fc bfc" id="L49" title="All 2 branches covered.">					if (!items[i].name.equals(&quot;Backstage passes to a TAFKAL80ETC concert&quot;)) {</span>
-<span class="fc bfc" id="L50" title="All 2 branches covered.">						if (items[i].quality &gt; 0) {</span>
-<span class="fc bfc" id="L51" title="All 2 branches covered.">							if (!items[i].name.equals(&quot;Sulfuras, Hand of Ragnaros&quot;)) {</span>
-<span class="fc" id="L52">								items[i].quality = items[i].quality - QUALITY_DECREASE;</span>
+<span class="fc bfc" id="L46" title="All 2 branches covered.">			if (items[i].sellIn &lt; SELLIN_CAP) {</span>
+<span class="fc bfc" id="L47" title="All 2 branches covered.">				if (!items[i].name.equals(&quot;Aged Brie&quot;)) {</span>
+<span class="fc bfc" id="L48" title="All 2 branches covered.">					if (!items[i].name.equals(&quot;Backstage passes to a TAFKAL80ETC concert&quot;)) {</span>
+<span class="fc bfc" id="L49" title="All 2 branches covered.">						if (items[i].quality &gt; 0) {</span>
+<span class="fc bfc" id="L50" title="All 2 branches covered.">							if (!items[i].name.equals(&quot;Sulfuras, Hand of Ragnaros&quot;)) {</span>
+<span class="fc" id="L51">								items[i].quality = items[i].quality - QUALITY_DECREASE;</span>
 							}
 						}
 					} else {
-<span class="fc" id="L56">						items[i].quality = items[i].quality - items[i].quality;</span>
+<span class="fc" id="L55">						items[i].quality = items[i].quality - items[i].quality;</span>
 					}
 				} else {
-<span class="fc bfc" id="L59" title="All 2 branches covered.">					if (items[i].quality &lt; MAX_QUALITY) {</span>
-<span class="fc" id="L60">						items[i].quality = items[i].quality + QUALITY_INCREASE;</span>
+<span class="fc bfc" id="L58" title="All 2 branches covered.">					if (items[i].quality &lt; MAX_QUALITY) {</span>
+<span class="fc" id="L59">						items[i].quality = items[i].quality + QUALITY_INCREASE;</span>
 					}
 				}
 			}
 		}
-<span class="fc" id="L65">	}</span>
+<span class="fc" id="L64">	}</span>
+
+	public void sellInUpdate(int index){
+<span class="fc bfc" id="L67" title="All 2 branches covered.">		if (!items[index].name.equals(&quot;Sulfuras, Hand of Ragnaros&quot;)) {</span>
+<span class="fc" id="L68">				items[index].sellIn = items[index].sellIn - SELLIN_DECREASE;</span>
+			}
+<span class="fc" id="L70">	}</span>
 }
 
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
