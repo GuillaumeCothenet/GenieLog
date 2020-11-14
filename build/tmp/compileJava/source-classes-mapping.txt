@@ -2,8 +2,8 @@ com/gildedrose/Item.java
  com.gildedrose.Item
 com/gildedrose/Sulfuras.java
  com.gildedrose.Sulfuras
-com/gildedrose/GildedRose.java
- com.gildedrose.GildedRose
+com/gildedrose/AgedBrie.java
+ com.gildedrose.AgedBrie
 com/gildedrose/NormalItem.java
  com.gildedrose.NormalItem
 com/gildedrose/Backstage.java
@@ -12,7 +12,9 @@ com/gildedrose/App.java
  com.gildedrose.App
 com/gildedrose/package-info.java
  com.gildedrose.package-info
-com/gildedrose/AgedBrie.java
- com.gildedrose.AgedBrie
+com/gildedrose/ConjuredItem.java
+ com.gildedrose.ConjuredItem
 com/gildedrose/ItemFactory.java
  com.gildedrose.ItemFactory
+com/gildedrose/GildedRose.java
+ com.gildedrose.GildedRose
