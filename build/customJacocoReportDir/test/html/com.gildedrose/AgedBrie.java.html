@@ -3,14 +3,28 @@
 public class AgedBrie extends Item{
 
     public AgedBrie(Item itemParameter) {
-<span class="nc" id="L6">        super(itemParameter.name, itemParameter.sellIn, itemParameter.quality);</span>
-<span class="nc" id="L7">    }</span>
+<span class="fc" id="L6">        super(itemParameter.name, itemParameter.sellIn, itemParameter.quality);</span>
+<span class="fc" id="L7">    }</span>
 
+	@Override
 	public void update(){
-		//Augmentation de la qualité si pas au max
-		//Décrémentation de sellin
-		//Si sellIN &lt; 0, au réaugmente la qualité si pas au max
-		//On retourne l'item
-<span class="nc" id="L14">	}</span>
+<span class="fc" id="L11">		System.out.println(&quot;SellIn before: &quot; + this.sellIn);</span>
+<span class="fc" id="L12">		this.updateSellIn();</span>
+<span class="fc" id="L13">		System.out.println(&quot;SellIn after: &quot; + this.sellIn);</span>
+<span class="fc" id="L14">		this.updateQuality();</span>
+<span class="fc" id="L15">	}</span>
+
+	private void updateSellIn(){
+<span class="fc" id="L18">		this.sellIn -= SELLIN_DECREASE;</span>
+<span class="fc" id="L19">	}</span>
+
+	private void updateQuality(){
+<span class="fc bfc" id="L22" title="All 4 branches covered.">		if(this.sellIn &lt; SELLIN_CAP &amp;&amp; this.quality &lt; MAX_QUALITY){</span>
+<span class="fc" id="L23">			this.quality += QUALITY_INCREASE;</span>
+		}
+<span class="fc bfc" id="L25" title="All 2 branches covered.">		if(this.quality &lt; MAX_QUALITY){</span>
+<span class="fc" id="L26">			this.quality += QUALITY_INCREASE;</span>
+		}
+<span class="fc" id="L28">	}</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

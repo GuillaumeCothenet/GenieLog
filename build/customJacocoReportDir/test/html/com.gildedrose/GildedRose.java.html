@@ -1,73 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>GildedRose.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">gilded-rose-kata</a> &gt; <a href="index.source.html" class="el_package">com.gildedrose</a> &gt; <span class="el_source">GildedRose.java</span></div><h1>GildedRose.java</h1><pre class="source lang-java linenums">package com.gildedrose;
+import java.util.ArrayList;
 
 class GildedRose {
-	protected static final int MIN_QUALITY = 0;
+
+	/*protected static final int MIN_QUALITY = 0;
 	protected static final int MAX_QUALITY = 50;
 	protected static final int QUALITY_DECREASE = 1;
 	protected static final int QUALITY_INCREASE = 1;
 	protected static final int SELLIN_CAP = 0;
 	protected static final int SELLIN_DECREASE = 1;
 	protected static final int SELLIN_BACKSTAGE_CAP1 = 11;
-	protected static final int SELLIN_BACKSTAGE_CAP2 = 6;
+	protected static final int SELLIN_BACKSTAGE_CAP2 = 6;*/
 
-	Item[] items;
+	ArrayList&lt;Item&gt; realItems;
 
-<span class="fc" id="L15">	GildedRose(Item[] items) {</span>
-<span class="fc" id="L16">		this.items = items;</span>
-<span class="fc" id="L17">	}</span>
+<span class="fc" id="L17">	public GildedRose(Item[] items) {</span>
+<span class="fc" id="L18">		this.realItems = new ArrayList&lt;Item&gt;();</span>
+<span class="fc bfc" id="L19" title="All 2 branches covered.">		for(Item itemSelected: items){</span>
+<span class="fc" id="L20">			this.realItems.add(getRealItem(itemSelected));</span>
+		}
+<span class="fc" id="L22">	}</span>
 
+	public void updateQuality(){
+<span class="fc bfc" id="L25" title="All 2 branches covered.">		for(Item itemSelected: this.realItems){</span>
+<span class="fc" id="L26">			itemSelected.update();</span>
+<span class="fc" id="L27">		}</span>
+<span class="fc" id="L28">	}</span>
+
+	private Item getRealItem(Item itemParameter){
+<span class="fc" id="L31">		ItemFactory factory = new ItemFactory(itemParameter);</span>
+<span class="fc" id="L32">		return factory.createItem(itemParameter);</span>
+	}
+
+
+/*
 	public void updateQuality() {
-<span class="fc bfc" id="L20" title="All 2 branches covered.">		for (int i = 0; i &lt; items.length; i++) {</span>
-<span class="fc bfc" id="L21" title="All 4 branches covered.">			if (!items[i].name.equals(&quot;Aged Brie&quot;) &amp;&amp; !items[i].name.equals(&quot;Backstage passes to a TAFKAL80ETC concert&quot;)) {</span>
-<span class="fc bfc" id="L22" title="All 2 branches covered.">				if (items[i].quality &gt; MIN_QUALITY ) {</span>
-<span class="fc bfc" id="L23" title="All 2 branches covered.">					if (!items[i].name.equals(&quot;Sulfuras, Hand of Ragnaros&quot;)) {</span>
-<span class="fc" id="L24">						items[i].quality = items[i].quality - QUALITY_DECREASE;</span>
+		for (int i = 0; i &lt; items.length; i++) {
+			if (!items[i].name.equals(&quot;Aged Brie&quot;) &amp;&amp; !items[i].name.equals(&quot;Backstage passes to a TAFKAL80ETC concert&quot;)) {
+				if (items[i].quality &gt; MIN_QUALITY ) {
+					if (!items[i].name.equals(&quot;Sulfuras, Hand of Ragnaros&quot;)) {
+						items[i].quality = items[i].quality - QUALITY_DECREASE;
 					}
 				}
 			} 
 			else {
-<span class="fc bfc" id="L29" title="All 2 branches covered.">				if (items[i].quality &lt; MAX_QUALITY) {</span>
-<span class="fc" id="L30">					items[i].quality = items[i].quality + QUALITY_INCREASE;</span>
+				if (items[i].quality &lt; MAX_QUALITY) {
+					items[i].quality = items[i].quality + QUALITY_INCREASE;
 
-<span class="fc bfc" id="L32" title="All 2 branches covered.">					if (items[i].name.equals(&quot;Backstage passes to a TAFKAL80ETC concert&quot;)) {</span>
-<span class="fc bfc" id="L33" title="All 2 branches covered.">						if (items[i].sellIn &lt; SELLIN_BACKSTAGE_CAP1) {</span>
-<span class="fc" id="L34">							items[i].quality = items[i].quality + QUALITY_INCREASE;</span>
+					if (items[i].name.equals(&quot;Backstage passes to a TAFKAL80ETC concert&quot;)) {
+						if (items[i].sellIn &lt; SELLIN_BACKSTAGE_CAP1) {
+							items[i].quality = items[i].quality + QUALITY_INCREASE;
 						}
 
-<span class="fc bfc" id="L37" title="All 2 branches covered.">						if (items[i].sellIn &lt; SELLIN_BACKSTAGE_CAP2) {</span>
-<span class="fc" id="L38">							items[i].quality = items[i].quality + QUALITY_INCREASE;</span>
+						if (items[i].sellIn &lt; SELLIN_BACKSTAGE_CAP2) {
+							items[i].quality = items[i].quality + QUALITY_INCREASE;
 						}
 					}
 				}
 			}
 
-<span class="fc" id="L44">			sellInUpdate(i);</span>
+			sellInUpdate(i);
 
-<span class="fc bfc" id="L46" title="All 2 branches covered.">			if (items[i].sellIn &lt; SELLIN_CAP) {</span>
-<span class="fc bfc" id="L47" title="All 2 branches covered.">				if (!items[i].name.equals(&quot;Aged Brie&quot;)) {</span>
-<span class="fc bfc" id="L48" title="All 2 branches covered.">					if (!items[i].name.equals(&quot;Backstage passes to a TAFKAL80ETC concert&quot;)) {</span>
-<span class="fc bfc" id="L49" title="All 2 branches covered.">						if (items[i].quality &gt; 0) {</span>
-<span class="fc bfc" id="L50" title="All 2 branches covered.">							if (!items[i].name.equals(&quot;Sulfuras, Hand of Ragnaros&quot;)) {</span>
-<span class="fc" id="L51">								items[i].quality = items[i].quality - QUALITY_DECREASE;</span>
+			if (items[i].sellIn &lt; SELLIN_CAP) {
+				if (!items[i].name.equals(&quot;Aged Brie&quot;)) {
+					if (!items[i].name.equals(&quot;Backstage passes to a TAFKAL80ETC concert&quot;)) {
+						if (items[i].quality &gt; 0) {
+							if (!items[i].name.equals(&quot;Sulfuras, Hand of Ragnaros&quot;)) {
+								items[i].quality = items[i].quality - QUALITY_DECREASE;
 							}
 						}
 					} else {
-<span class="fc" id="L55">						items[i].quality = items[i].quality - items[i].quality;</span>
+						items[i].quality = items[i].quality - items[i].quality;
 					}
 				} else {
-<span class="fc bfc" id="L58" title="All 2 branches covered.">					if (items[i].quality &lt; MAX_QUALITY) {</span>
-<span class="fc" id="L59">						items[i].quality = items[i].quality + QUALITY_INCREASE;</span>
+					if (items[i].quality &lt; MAX_QUALITY) {
+						items[i].quality = items[i].quality + QUALITY_INCREASE;
 					}
 				}
 			}
 		}
-<span class="fc" id="L64">	}</span>
+	}
 
 	public void sellInUpdate(int index){
-<span class="fc bfc" id="L67" title="All 2 branches covered.">		if (!items[index].name.equals(&quot;Sulfuras, Hand of Ragnaros&quot;)) {</span>
-<span class="fc" id="L68">				items[index].sellIn = items[index].sellIn - SELLIN_DECREASE;</span>
+		if (!items[index].name.equals(&quot;Sulfuras, Hand of Ragnaros&quot;)) {
+				items[index].sellIn = items[index].sellIn - SELLIN_DECREASE;
 			}
-<span class="fc" id="L70">	}</span>
+	}*/
 }
 
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

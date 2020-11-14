@@ -2,21 +2,31 @@
 
 public class Item {
 
+	protected static final int MIN_QUALITY = 0;
+	protected static final int MAX_QUALITY = 50;
+	protected static final int QUALITY_DECREASE = 1;
+	protected static final int QUALITY_INCREASE = 1;
+	protected static final int SELLIN_CAP = 0;
+	protected static final int SELLIN_DECREASE = 1;
+
     public String name;
 
     public int sellIn;
 
     public int quality;
 
-<span class="fc" id="L11">    public Item(String name, int sellIn, int quality) {</span>
-<span class="fc" id="L12">        this.name = name;</span>
-<span class="fc" id="L13">        this.sellIn = sellIn;</span>
-<span class="fc" id="L14">        this.quality = quality;</span>
-<span class="fc" id="L15">    }</span>
+<span class="fc" id="L18">    public Item(String name, int sellIn, int quality) {</span>
+<span class="fc" id="L19">        this.name = name;</span>
+<span class="fc" id="L20">        this.sellIn = sellIn;</span>
+<span class="fc" id="L21">        this.quality = quality;</span>
+<span class="fc" id="L22">    }</span>
+
+	public void update(){
+<span class="nc" id="L25">	}</span>
 
    @Override
    public String toString() {
-<span class="fc" id="L19">        return this.name + &quot;, &quot; + this.sellIn + &quot;, &quot; + this.quality;</span>
+<span class="fc" id="L29">        return this.name + &quot;, &quot; + this.sellIn + &quot;, &quot; + this.quality;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

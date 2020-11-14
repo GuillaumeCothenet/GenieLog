@@ -1,14 +1,16 @@
-com/gildedrose/AgedBrie.java
- com.gildedrose.AgedBrie
-com/gildedrose/Item.java
- com.gildedrose.Item
-com/gildedrose/GildedRose.java
- com.gildedrose.GildedRose
-com/gildedrose/Backstage.java
- com.gildedrose.Backstage
 com/gildedrose/NormalItem.java
  com.gildedrose.NormalItem
+com/gildedrose/Backstage.java
+ com.gildedrose.Backstage
+com/gildedrose/AgedBrie.java
+ com.gildedrose.AgedBrie
 com/gildedrose/ItemFactory.java
  com.gildedrose.ItemFactory
+com/gildedrose/Item.java
+ com.gildedrose.Item
 com/gildedrose/Sulfuras.java
  com.gildedrose.Sulfuras
+com/gildedrose/App.java
+ com.gildedrose.App
+com/gildedrose/GildedRose.java
+ com.gildedrose.GildedRose

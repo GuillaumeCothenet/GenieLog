@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Backstage.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">gilded-rose-kata</a> &gt; <a href="index.source.html" class="el_package">com.gildedrose</a> &gt; <span class="el_source">Backstage.java</span></div><h1>Backstage.java</h1><pre class="source lang-java linenums">package com.gildedrose;
+
+public class Backstage extends Item{
+
+	protected static final int SELLIN_BACKSTAGE_CAP1 = 10;
+	protected static final int SELLIN_BACKSTAGE_CAP2 = 5;
+
+    public Backstage(Item itemParameter) {
+<span class="fc" id="L9">        super(itemParameter.name, itemParameter.sellIn, itemParameter.quality);</span>
+<span class="fc" id="L10">    }</span>
+
+	@Override
+	public void update(){
+<span class="fc" id="L14">		this.updateSellIn();</span>
+<span class="fc" id="L15">		this.updateQuality();</span>
+<span class="fc" id="L16">	}</span>
+
+	private void updateSellIn(){
+<span class="fc" id="L19">		this.sellIn -= SELLIN_DECREASE;</span>
+<span class="fc" id="L20">	}</span>
+
+	private void updateQuality(){
+<span class="fc bfc" id="L23" title="All 4 branches covered.">		if(this.sellIn &lt;= SELLIN_BACKSTAGE_CAP1 &amp;&amp; this.quality &lt; MAX_QUALITY){</span>
+<span class="fc" id="L24">			this.quality += QUALITY_INCREASE;</span>
+		}
+<span class="fc bfc" id="L26" title="All 4 branches covered.">		if(this.sellIn &lt;= SELLIN_BACKSTAGE_CAP2 &amp;&amp; this.quality &lt; MAX_QUALITY){</span>
+<span class="fc" id="L27">			this.quality += QUALITY_INCREASE;</span>
+		}
+<span class="fc bfc" id="L29" title="All 2 branches covered.">		if(this.quality &lt; MAX_QUALITY){</span>
+<span class="fc" id="L30">			this.quality += QUALITY_INCREASE;</span>
+		}
+<span class="fc bfc" id="L32" title="All 2 branches covered.">		if(this.sellIn &lt;= SELLIN_CAP){</span>
+<span class="fc" id="L33">			this.quality = MIN_QUALITY;</span>
+		}
+<span class="fc" id="L35">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

@@ -4,7 +4,10 @@ plugins {
     id 'checkstyle'
     id 'pmd'
     id 'com.github.spotbugs' version '4.5.0'
+	id 'application'
 }
+
+mainClassName = 'com.gildedrose.App'
 
 group = 'com.gildedrose'
 version = '0.0.1-SNAPSHOT'
