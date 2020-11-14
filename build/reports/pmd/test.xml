@@ -2,15 +2,21 @@
 <pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
-    version="6.23.0" timestamp="2020-10-06T16:19:27.615">
-<file name="/home/local.isima.fr/gucothenet/Documents/GenieLog/TP1/GildedRose/src/test/java/com/gildedrose/GildedRoseTest.java">
-<violation beginline="97" endline="97" begincolumn="46" endcolumn="88" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="backstageSellInMoreThan10Days" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
-The String literal &quot;Backstage passes to a TAFKAL80ETC concert&quot; appears 4 times in this file; the first occurrence is on line 97
+    version="6.23.0" timestamp="2020-11-14T09:57:42.965">
+<file name="/home/gucothenet/Documents/GenieLog/GenieLog/TP1/GildedRose/src/test/java/com/gildedrose/GildedRoseTest.java">
+<violation beginline="32" endline="32" begincolumn="46" endcolumn="58" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testSellInDecrementBy1" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal &quot;random item&quot; appears 5 times in this file; the first occurrence is on line 32
+</violation>
+<violation beginline="85" endline="85" begincolumn="46" endcolumn="56" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testAgedBrieQualityIncreaseBy1" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal &quot;Aged Brie&quot; appears 4 times in this file; the first occurrence is on line 85
+</violation>
+<violation beginline="172" endline="172" begincolumn="46" endcolumn="88" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testBackstageQualityIncreaseBy1WhenSellInGreaterThan10" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal &quot;Backstage passes to a TAFKAL80ETC concert&quot; appears 7 times in this file; the first occurrence is on line 172
 </violation>
 </file>
-<file name="/home/local.isima.fr/gucothenet/Documents/GenieLog/TP1/GildedRose/src/test/java/com/gildedrose/TexttestFixture.java">
-<violation beginline="19" endline="35" begincolumn="20" endcolumn="46" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="com.gildedrose" class="TexttestFixture" method="main" variable="app" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
-Found 'DU'-anomaly for variable 'app' (lines '19'-'35').
+<file name="/home/gucothenet/Documents/GenieLog/GenieLog/TP1/GildedRose/src/test/java/com/gildedrose/TexttestFixture.java">
+<violation beginline="19" endline="39" begincolumn="20" endcolumn="46" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="com.gildedrose" class="TexttestFixture" method="main" variable="app" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'app' (lines '19'-'39').
 </violation>
 <violation beginline="21" endline="23" begincolumn="13" endcolumn="48" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="com.gildedrose" class="TexttestFixture" method="main" variable="days" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
 Found 'DD'-anomaly for variable 'days' (lines '21'-'23').

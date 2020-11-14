@@ -1,32 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.1.1" sequence="0" timestamp="1601993967703" analysisTimestamp="1601993967704" release="0.0.1-SNAPSHOT">
+<BugCollection version="4.1.1" sequence="0" timestamp="1605345073477" analysisTimestamp="1605345073559" release="0.0.1-SNAPSHOT">
   <Project projectName="gilded-rose-kata (spotbugsTest)">
-    <Jar>/home/local.isima.fr/gucothenet/Documents/GenieLog/TP1/GildedRose/build/classes/java/test/com/gildedrose/GildedRoseTest.class</Jar>
-    <Jar>/home/local.isima.fr/gucothenet/Documents/GenieLog/TP1/GildedRose/build/classes/java/test/com/gildedrose/TexttestFixture.class</Jar>
-    <AuxClasspathEntry>/home/local.isima.fr/gucothenet/Documents/GenieLog/TP1/GildedRose/build/classes/java/main</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/local.isima.fr/gucothenet/Documents/GenieLog/TP1/GildedRose/build/resources/main</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/local.isima.fr/gucothenet/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest/2.2/1820c0968dba3a11a1b30669bb1f01978a91dedc/hamcrest-2.2.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/local.isima.fr/gucothenet/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.3.1/a7e97eac2784395cb991403f9641b042ad972941/junit-jupiter-api-5.3.1.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/local.isima.fr/gucothenet/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.3.1/67b7edddfac1935e6e6d9b58d7c7df6db59b1d39/junit-platform-commons-1.3.1.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/local.isima.fr/gucothenet/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.0.0/3ef5276905e36f4d8055fe3cb0bdcc7503ffc85d/apiguardian-api-1.0.0.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/local.isima.fr/gucothenet/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.1.1/efd9f971e91074491ea55b19f67b13470cf4fcdd/opentest4j-1.1.1.jar</AuxClasspathEntry>
-    <SrcDir>/home/local.isima.fr/gucothenet/Documents/GenieLog/TP1/GildedRose/src/test/resources</SrcDir>
-    <SrcDir>/home/local.isima.fr/gucothenet/Documents/GenieLog/TP1/GildedRose/src/test/java</SrcDir>
+    <Jar>/home/gucothenet/Documents/GenieLog/GenieLog/TP1/GildedRose/build/classes/java/test/com/gildedrose/TexttestFixture.class</Jar>
+    <Jar>/home/gucothenet/Documents/GenieLog/GenieLog/TP1/GildedRose/build/classes/java/test/com/gildedrose/GildedRoseTest.class</Jar>
+    <AuxClasspathEntry>/home/gucothenet/Documents/GenieLog/GenieLog/TP1/GildedRose/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/gucothenet/Documents/GenieLog/GenieLog/TP1/GildedRose/build/resources/main</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/gucothenet/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest/2.2/1820c0968dba3a11a1b30669bb1f01978a91dedc/hamcrest-2.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/gucothenet/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.3.1/a7e97eac2784395cb991403f9641b042ad972941/junit-jupiter-api-5.3.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/gucothenet/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.3.1/67b7edddfac1935e6e6d9b58d7c7df6db59b1d39/junit-platform-commons-1.3.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/gucothenet/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.0.0/3ef5276905e36f4d8055fe3cb0bdcc7503ffc85d/apiguardian-api-1.0.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/gucothenet/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.1.1/efd9f971e91074491ea55b19f67b13470cf4fcdd/opentest4j-1.1.1.jar</AuxClasspathEntry>
+    <SrcDir>/home/gucothenet/Documents/GenieLog/GenieLog/TP1/GildedRose/src/test/resources</SrcDir>
+    <SrcDir>/home/gucothenet/Documents/GenieLog/GenieLog/TP1/GildedRose/src/test/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Tue, 6 Oct 2020 16:19:27 +0200" total_classes="2" referenced_classes="19" total_bugs="0" total_size="112" num_packages="1" java_version="1.8.0_232" vm_version="25.232-b09" cpu_seconds="2.20" clock_seconds="0.26" peak_mbytes="236.87" alloc_mbytes="455.50" gc_seconds="0.01">
-    <FileStats path="com/gildedrose/GildedRoseTest.java" bugCount="0" size="94"/>
-    <FileStats path="com/gildedrose/TexttestFixture.java" bugCount="0" size="18"/>
-    <PackageStats package="com.gildedrose" total_bugs="0" total_types="2" total_size="112">
-      <ClassStats class="com.gildedrose.GildedRoseTest" sourceFile="GildedRoseTest.java" interface="false" size="94" bugs="0"/>
-      <ClassStats class="com.gildedrose.TexttestFixture" sourceFile="TexttestFixture.java" interface="false" size="18" bugs="0"/>
+  <FindBugsSummary timestamp="Sat, 14 Nov 2020 10:11:13 +0100" total_classes="2" referenced_classes="20" total_bugs="0" total_size="194" num_packages="1" java_version="1.8.0_262" vm_version="25.262-b10" cpu_seconds="5.42" clock_seconds="5.58" peak_mbytes="139.97" alloc_mbytes="455.50" gc_seconds="0.38">
+    <FileStats path="com/gildedrose/GildedRoseTest.java" bugCount="0" size="174"/>
+    <FileStats path="com/gildedrose/TexttestFixture.java" bugCount="0" size="20"/>
+    <PackageStats package="com.gildedrose" total_bugs="0" total_types="2" total_size="194">
+      <ClassStats class="com.gildedrose.GildedRoseTest" sourceFile="GildedRoseTest.java" interface="false" size="174" bugs="0"/>
+      <ClassStats class="com.gildedrose.TexttestFixture" sourceFile="TexttestFixture.java" interface="false" size="20" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="64" invocations="407" avgMicrosecondsPerInvocation="158" maxMicrosecondsPerInvocation="2944" standardDeviationMicrosecondsPerInvocation="328"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="29" invocations="409" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="325" standardDeviationMicrosecondsPerInvocation="31"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="16" invocations="15" avgMicrosecondsPerInvocation="1106" maxMicrosecondsPerInvocation="12852" standardDeviationMicrosecondsPerInvocation="3146"/>
-      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="11" invocations="375" avgMicrosecondsPerInvocation="30" maxMicrosecondsPerInvocation="564" standardDeviationMicrosecondsPerInvocation="58"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="782" invocations="411" avgMicrosecondsPerInvocation="1904" maxMicrosecondsPerInvocation="60093" standardDeviationMicrosecondsPerInvocation="7132"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="633" invocations="409" avgMicrosecondsPerInvocation="1548" maxMicrosecondsPerInvocation="78872" standardDeviationMicrosecondsPerInvocation="6517"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="385" invocations="38" avgMicrosecondsPerInvocation="10145" maxMicrosecondsPerInvocation="320292" standardDeviationMicrosecondsPerInvocation="51650"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="270" invocations="20" avgMicrosecondsPerInvocation="13511" maxMicrosecondsPerInvocation="76705" standardDeviationMicrosecondsPerInvocation="23561"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="173" invocations="85" avgMicrosecondsPerInvocation="2040" maxMicrosecondsPerInvocation="63071" standardDeviationMicrosecondsPerInvocation="9300"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="170" invocations="25" avgMicrosecondsPerInvocation="6816" maxMicrosecondsPerInvocation="148596" standardDeviationMicrosecondsPerInvocation="29074"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="123" invocations="25" avgMicrosecondsPerInvocation="4920" maxMicrosecondsPerInvocation="56989" standardDeviationMicrosecondsPerInvocation="12523"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="116" invocations="25" avgMicrosecondsPerInvocation="4644" maxMicrosecondsPerInvocation="64657" standardDeviationMicrosecondsPerInvocation="13602"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="115" invocations="2" avgMicrosecondsPerInvocation="57655" maxMicrosecondsPerInvocation="111883" standardDeviationMicrosecondsPerInvocation="54228"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="114" invocations="25" avgMicrosecondsPerInvocation="4593" maxMicrosecondsPerInvocation="51796" standardDeviationMicrosecondsPerInvocation="11174"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="102" invocations="25" avgMicrosecondsPerInvocation="4115" maxMicrosecondsPerInvocation="47029" standardDeviationMicrosecondsPerInvocation="10486"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="98" invocations="25" avgMicrosecondsPerInvocation="3951" maxMicrosecondsPerInvocation="38441" standardDeviationMicrosecondsPerInvocation="9098"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="94" invocations="20" avgMicrosecondsPerInvocation="4732" maxMicrosecondsPerInvocation="27868" standardDeviationMicrosecondsPerInvocation="7338"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="90" invocations="20" avgMicrosecondsPerInvocation="4519" maxMicrosecondsPerInvocation="53440" standardDeviationMicrosecondsPerInvocation="12751"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="88" invocations="377" avgMicrosecondsPerInvocation="236" maxMicrosecondsPerInvocation="20126" standardDeviationMicrosecondsPerInvocation="1236"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
