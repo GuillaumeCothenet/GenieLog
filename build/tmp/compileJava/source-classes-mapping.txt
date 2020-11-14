@@ -1,3 +1,5 @@
+com/gildedrose/NormalItem.java
+ com.gildedrose.NormalItem
 com/gildedrose/Backstage.java
  com.gildedrose.Backstage
 com/gildedrose/AgedBrie.java
