@@ -8,11 +8,11 @@ com/gildedrose/NormalItem.java
  com.gildedrose.NormalItem
 com/gildedrose/Backstage.java
  com.gildedrose.Backstage
-com/gildedrose/GildedRose.java
- com.gildedrose.GildedRose
-com/gildedrose/package-info.java
- com.gildedrose.package-info
 com/gildedrose/ConjuredItem.java
  com.gildedrose.ConjuredItem
+com/gildedrose/package-info.java
+ com.gildedrose.package-info
 com/gildedrose/ItemFactory.java
  com.gildedrose.ItemFactory
+com/gildedrose/GildedRose.java
+ com.gildedrose.GildedRose

@@ -15,11 +15,6 @@ public class GildedRose {
     }
   }
 
-  //A supprimer 
-  public ArrayList<Item> getRealItems() {
-    return this.realItems;
-  }
-
   public Item getFirstItem() {
     return this.realItems.get(0);
   }
